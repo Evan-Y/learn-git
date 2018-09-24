@@ -73,3 +73,4 @@ Git is a free software.
 	3、从远程库clone时，默认情况下，只能看到本地的master分支
 	4、需要创建远程origin的分支dev到本地，git checkout -b dev origin/dev，这样，可以在dev上继续修改
 	5、push时出现冲突，先用git pull把最新的提交从远程origin/dev抓取下来，然后在本地合并，解决冲突，再推送
+	6、git pull: 本地分支落后远程 'origin/branch-name'，可以使用 "git pull" 来更新本地分支
