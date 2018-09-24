@@ -41,3 +41,6 @@ Git is free software.
 	2、关联后，使用命令 git push -u origin master 第一次推送master分支的所有内容
 	3、此后，每次本地提交后，只要有必要，使用命令 git push origin master 推送最新修改
 
+从远程库克隆：
+	1、从远程库克隆到本地库：git clone git@server-name:path/repo-name.git
+	2、ssh支持的原生git协议速度最快
