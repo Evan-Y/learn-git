@@ -58,6 +58,9 @@ Git is a free software.
 	git log --graph 查看分支合并图
 
 分支管理：
-	fast forward模式合并分支时，删除分支后，会丢掉分支信息
-	强制禁用fast forward模式，git会在merge时生成一个新的commit，--no-ff
-
+	1、fast forward模式合并分支时，删除分支后，会丢掉分支信息
+	2、强制禁用fast forward模式，git会在merge时生成一个新的commit，--no-ff
+	3、实际开发中，master分支应该是非常稳定的，仅用来发布新版本
+	4、平时干活都在dev分支上，每个人都有自己的分支，时不时往dev分支上合并，发布的时候再把dev分支合并到master上
+	5、bug分支，修复bug的时候一般在新的分支上进行，而当前分支工作尚未完成不能提交，需要将当前工作现场“存储”起来-->git stash；需要在哪个分支上修复bug，就从哪个分支创建临时分支；恢复工作现场，git stash list查看stash中的内容，git stash pop恢复的同时也从stash中删除
+	
