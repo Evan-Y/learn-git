@@ -44,3 +44,10 @@ Git is free software.
 从远程库克隆：
 	1、从远程库克隆到本地库：git clone git@server-name:path/repo-name.git
 	2、ssh支持的原生git协议速度最快
+
+创建与合并分支：
+	1、git checkout -b branch-name: -b参数表示创建并切换到新的分支
+	2、git branch: 查看所有分支，×表示当前分支
+	3、提交后，切换回master分支，master分支并看不到刚提交的内容，master分支此刻的提交点并没有变，需要进行合并
+	4、git merge branch-name: 合并指定分支到当前分支
+	5、git branch -d branch-name: 删除指定分支 -d
