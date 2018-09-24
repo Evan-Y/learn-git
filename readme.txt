@@ -52,4 +52,8 @@ Git is free software.
 	4、git merge branch-name: 合并指定分支到当前分支
 	5、git branch -d branch-name: 删除指定分支 -d
 
-&
+<<<<<<< HEAD
+and
+=======
+and
+>>>>>>> feature1
