@@ -10,3 +10,10 @@ Git is free software.
 	1、git status: 查看工作区的状态，是否有文件修改过
 	2、git diff: 查看修改的内容
 	3、提交修改: 和添加文件一样，分两步，git add + git commit
+
+版本回退：
+	1、git log: 查看提交的日志，从近到远
+	2、HEAD 表示当前的版本，HEAD^上一个版本，HEAD^^上上一个版本，HEAD~100往上100个版本
+	3、git reset + '版本' 回退到指定的版本
+	4、git reset + 'commit id' 回退到commit id对应的版本
+	5、git reflog: 查看历史命令历史
