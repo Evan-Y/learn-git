@@ -51,3 +51,5 @@ Git is free software.
 	3、提交后，切换回master分支，master分支并看不到刚提交的内容，master分支此刻的提交点并没有变，需要进行合并
 	4、git merge branch-name: 合并指定分支到当前分支
 	5、git branch -d branch-name: 删除指定分支 -d
+
+&
