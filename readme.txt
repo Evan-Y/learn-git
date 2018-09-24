@@ -17,3 +17,12 @@ Git is free software.
 	3、git reset + '版本' 回退到指定的版本
 	4、git reset + 'commit id' 回退到commit id对应的版本
 	5、git reflog: 查看历史命令历史
+
+工作区和暂存区：
+	1、工作区：电脑中的当前目录
+	2、暂存区（stage），分支
+	3、git add: 把工作区的文件添加到暂存区（stage）
+	4、git commit: 把暂存区中的所有内容提交到当前分支
+	5、git diff--> 工作区与暂存区比较; git diff --cached --> 暂存区与分支比较
+
+
