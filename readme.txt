@@ -56,3 +56,8 @@ Git is free software.
 	git无法自动合并分支时，需要先解决冲突
 	解决冲突就是把git合并失败的文件手动编辑为我们希望的内容，再提交
 	git log --graph 查看分支合并图
+
+分支管理：
+	fast forward模式合并分支时，删除分支后，会丢掉分支信息
+	强制禁用fast forward模式，git会在merge时生成一个新的commit，--no-ff
+
