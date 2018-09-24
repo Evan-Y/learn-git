@@ -29,3 +29,15 @@ Git is free software.
 	1、git chekout -- filePath: 修改了但是未git add到暂存区；让文件回到最近一次git commit或git add时的状态
 	2、git reset HEAD <file>: 把暂存区中的修改撤销掉（unstage），重新放回工作区
 	3、若已commit，回退版本
+
+删除文件：
+	1、rm file: 从工作区删除文件
+	2、git status: 查看哪些文件被删除了
+		2.1 git rm file + git commit 从版本库中删除该文件
+		2.2 git checkout -- file 误删，从版本库中恢复文件
+
+添加远程库：
+	1、关联一个远程库：git remote add origin git@server-name:path/repo-name.git
+	2、关联后，使用命令 git push -u origin master 第一次推送master分支的所有内容
+	3、此后，每次本地提交后，只要有必要，使用命令 git push origin master 推送最新修改
+
