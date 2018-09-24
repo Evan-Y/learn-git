@@ -1,5 +1,5 @@
 Git is a version control system.
-Git is free software.
+Git is a free software.
 
 初始化一个Git仓库：git init
 添加文件到Git仓库：
@@ -62,11 +62,14 @@ Git is free software.
 	2、强制禁用fast forward模式，git会在merge时生成一个新的commit，--no-ff
 	3、实际开发中，master分支应该是非常稳定的，仅用来发布新版本
 	4、平时干活都在dev分支上，每个人都有自己的分支，时不时往dev分支上合并，发布的时候再把dev分支合并到master上
-	5、bug分支，修复bug的时候一般在新的分支上进行，而当前分支工作尚未完成不能提交，需要将当前工作现场“存储”起来-->git stash；需要在哪个分支上修复bug，就从哪个分支创建临时分支；恢复工作现场，git stash list查看stash中的内容，git stash pop恢复的同时也从stash中删除
+  5、bug分支，修复bug的时候一般在新的分支上进行，而当前分支工作尚未完成不能提交，需要将当前工作现场“存储”起来-->git stash；
+	6、需要在哪个分支上修复bug，就从哪个分支创建临时分支；
+	7、恢复工作现场，git stash list查看stash中的内容，git stash pop恢复的同时也从stash中删除
+	8、新的feature，最好新建一个新的分支，如果需要丢弃，通过git branch -D <name>强行删除
 
 多人协作：
 	1、origin是远程仓库的默认名称；git remote查看远程仓库信息
 	2、pull到远程仓库时，需要指定本地分支，这样git会把分支推送到远程库对应的远程分支上
 	3、从远程库clone时，默认情况下，只能看到本地的master分支
 	4、需要创建远程origin的分支dev到本地，git checkout -b dev origin/dev，这样，可以在dev上继续修改
-	5、pull时出现冲突，先用git pull把最新的提交从远程origin/dev抓取下来，然后在本地合并，解决冲突，在推送	
+	5、pull时出现冲突，先用git pull把最新的提交从远程origin/dev抓取下来，然后在本地合并，解决冲突，再推送
