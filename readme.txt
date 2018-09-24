@@ -52,8 +52,7 @@ Git is free software.
 	4、git merge branch-name: 合并指定分支到当前分支
 	5、git branch -d branch-name: 删除指定分支 -d
 
-<<<<<<< HEAD
-and
-=======
-and
->>>>>>> feature1
+分支冲突：
+	git无法自动合并分支时，需要先解决冲突
+	解决冲突就是把git合并失败的文件手动编辑为我们希望的内容，再提交
+	git log --graph 查看分支合并图
