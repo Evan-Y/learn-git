@@ -25,4 +25,7 @@ Git is free software.
 	4、git commit: 把暂存区中的所有内容提交到当前分支
 	5、git diff--> 工作区与暂存区比较; git diff --cached --> 暂存区与分支比较
 
-
+撤销修改：
+	1、git chekout -- filePath: 修改了但是未git add到暂存区；让文件回到最近一次git commit或git add时的状态
+	2、git reset HEAD <file>: 把暂存区中的修改撤销掉（unstage），重新放回工作区
+	3、若已commit，回退版本
